@@ -1,0 +1,16 @@
+spectacle
+kekeka
+sqlt 자격증
+
+frontend *view.js *react.js *anglerer
+
+beckend *jango *spring
+
+DB *sql sql light, orm
+
+*node.js , aws
+
+kotlin
+
+react native
+

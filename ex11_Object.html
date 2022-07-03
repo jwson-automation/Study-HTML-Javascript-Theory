@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <style>
+        #main {color:white; background-color : green; text-align: center; }
+        li {text-align: center; list-style-position: inside;}
+        </style>
+        <script>
+          function setColor(color){
+              var alist =document.querySelectorAll('a')
+              var i = 0;
+              while(i < alist.length){
+                  alist[i].style.color = color;
+                  i = i+1;  }
+          }
+          function BodysetColor(color){
+            document.querySelector('body').style.backgroundColor = color;
+          }
+          function BodyfontColor(color){
+            document.querySelector('body').style.color = color;
+          }
+        </script>
+    </head> 
+
+    <body id="main">
+      <h1><a>NAVER</a></h1>
+      <h2><a>LINE</a></h2>
+      <h2><a>SEMI</a></h2>          
+
+      
+        <script>
+      var coworkers = ['koala','kokiri','komugiko','kokoa'];
+        </script>
+
+
+    <input id ='night_day' type="button" value="night" onclick="
+    var target = document.querySelector('body')
+        if(this.value === 'night')
+        {            
+          BodysetColor('black');
+          BodyfontColor('white');
+          this.value = 'day';
+          setColor('gold');        
+        }
+        else
+        {
+          BodysetColor('green');
+          BodyfontColor('white');
+          this.value = 'night';
+          setColor('white');
+        }
+    ">
+
+      <ul>
+        <script> 
+        var i = 0;
+        while(i < coworkers.length)
+        {
+        document.write('<li>'+coworkers[i]+'</li>');
+        i = i+1;
+        }
+        </script>
+      </ul>
+
+    </body>
+
+</html>
+
+
+

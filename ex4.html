@@ -1,15 +1,39 @@
-<!DOCTYPE html>
 <html>
-    <head>        
-    </head>  
+    <head>
+        <title>ex4</title>
+        <meta charset="utf-8"> 
+    </head> 
 
-    <body class = base > 
-        <h3>hello, world!</h3>
-        Description 
-    
+    <body>
+  
+        <input id ='night_day' type="button" value="night" onclick="
+        var target = document.querySelector('body')
+        if(this.value === 'night'){            
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white'
+        this.value = 'day';}
+        else
+        {
+            target.style.backgroundColor = 'grey';
+            target.style.color = 'black'
+            this.value = 'night';}
+            ">
+
+    <ol>
+      <li>정우 화이팅</li>
+    </ol>
     </body>
 
+    <input id ='night_day2' type="button" value="night" onclick="
+    if(this.value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white'
+    this.value = 'day';}
+    else
+    {
+        document.querySelector('body').style.backgroundColor = 'grey';
+        document.querySelector('body').style.color = 'black'
+        this.value = 'night'};
+        ">
 </html>
 
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/sonjungwoo/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"

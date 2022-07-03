@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two()
+        {
+          document.write('<li>1</li>')
+          document.write('<li>2</li>')  
+        }
+        two();
+        two();
+        two();
+      </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+    <script>
+      function onePlusone()
+      {
+        document.write(1+1+'<br>');
+      }
+      onePlusone();
+
+      function sum(left, right)
+      {
+        document.write(left+right+'<br>');        
+      }
+
+      function sumCorlorRed(left, right)
+      {
+        document.write('<div style="color:red">'+(left+right)+'</div>');        
+      }
+      sumCorlorRed (2,3); 
+
+      sum (2,3); 
+      sum (3,4);
+    </script>
+
+    <h2>Return</h2>
+    <script>
+        function sum2(left,right){
+        return left+right;
+      }
+      
+        document.write(sum2(2,3)+'<br>')
+        document.write('<div style="color:red">'+sum2(2,3)+'</div>')
+        document.write('<div style="color:pink">'+sum2(2,3)+'</div>')
+      </script>
+
+      <br>
+      설명을 추가하자면,
+      <br>
+      위의 Parameter&Argument는 document.write를 통해서 출력을 어떻게 할 지를 정해준거라면
+      <br>
+      밑의 Return은 return을 사용해서 계산을 해준거임
+      
+      <br>
+      <br>
+      이렇게 출력해 vs 계산해
+      이건 큰 차이가 있음
+      <br>
+      어떻게 일을 해야 할지 하나하나 다 가르쳐 주는것과
+      <br>
+      계산하는 방법을 알려주는 것의 차이?
+  </body>
+</html>
+
+
+

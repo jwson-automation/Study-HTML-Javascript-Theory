@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8"> 
+    </head> 
+
+
+
+    <body style = "color:white; background-color: black;">
+      <h1><a>Loop&Array</a></h1>
+      <h2><a>co workers</a></h2>
+      
+        <script>
+      var coworkers = ['koala','kokiri','komugiko','kokoa'];
+        </script>
+
+
+    <input id ='night_day' type="button" value="night" onclick="
+    var target = document.querySelector('body')
+        if(this.value === 'night')
+        {            
+          target.style.backgroundColor = 'black';
+          target.style.color = 'white'
+          this.value = 'day';
+
+          var alist =document.querySelectorAll('a')
+          var i = 0;
+          while(i < alist.length){
+              alist[i].style.color = 'pink';
+              i = i+1;  }
+        }
+        else
+        {
+          target.style.backgroundColor = 'grey';
+          target.style.color = 'black'
+          this.value = 'night';
+          var alist =document.querySelectorAll('a')
+          var i = 0;
+          while(i < alist.length){
+              alist[i].style.color = 'blue';
+              i = i+1;  }
+        }
+    ">
+
+
+
+}
+      <ul>
+        <script> 
+        var i = 0;
+        while(i < coworkers.length)
+        {
+        document.write('<li>'+coworkers[i]+'</li>');
+        i = i+1;
+        }
+        </script>
+      </ul>
+
+    </body>
+
+</html>
+
+
+

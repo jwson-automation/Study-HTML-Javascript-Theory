@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <title>now</title>
+        <script scr = "colors.js"></script>
+    </head> 
+
+    <body>
+      <h1><a>NAVER</a></h1>
+    <input id ='night_day' type="button" value="night" 
+    onclick="
+    
+            var target = document.querySelector('body')
+            if(this.value === 'night')
+            {            
+              Body.setBackgroundColor('black');
+              Body.setColor('white');
+              this.value = 'day';
+              Links.SetColor('gold');        
+            }
+            else
+            {Body.setBackgroundColor('green');
+              Body.setColor('white');
+              this.value = 'night';
+              Links.SetColor('white');
+            }
+            ">
+ 
+    </body>
+
+</html>
+
+
+
